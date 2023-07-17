@@ -1,0 +1,24 @@
+{
+  "name": "foodify",
+  "version": "1.0.0",
+  "description": "An application to manage recipes.",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "José Navarro",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.9.3",
+    "parcel": "^2.9.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.0",
+    "bootstrap-icons": "^1.10.5",
+    "core-js": "^3.31.1",
+    "fractional": "^1.0.0",
+    "regenerator-runtime": "^0.13.11"
+  }
+}

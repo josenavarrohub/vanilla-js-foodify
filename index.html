@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodify</title>
+    <link rel="icon" href="src/img/favicon.svg" />
+    <link href="src/sass/styles.scss" rel="stylesheet" />
+    <script type="module" src="src/js/controllers/recipeController.js" />
+  </head>
+
+  <body class="d-flex flex-column h-100">
+    <header>
+      <nav class="c-navbar navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img class="logo" src="src/img/logo.svg" alt="Foodify"></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0"></ul>
+
+            <!-- Component: Search -->
+            <form class="c-search d-flex" role="search">
+              <div class="input-group">
+                <input class="form-control" type="search" placeholder="Example: pizza..." aria-label="Search">
+                <button class="btn btn-secondary" type="submit">Search</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="flex-shrink-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            
+            <!-- Component: Recipes -->
+            <div class="c-recipes"></div>
+
+            <!-- Component: Pagination -->
+            <nav class="c-pagination" aria-label="Pagination">
+              <ul class="c-pagination__list pagination justify-content-center"><ul>
+            </nav>
+
+          </div>
+          <div class="col-lg-9">
+
+            <!-- Component: Recipe -->
+            <div class="c-recipe">
+              <div class="col-lg-7 text-center mt-5">
+                <h2>Use the search box to find recipes</h2>
+                <img src="src/img/hat.svg" alt="Foodify" class="c-recipe__hat" />
+              </div>
+            </div>
+          
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-light text-center">
+      <div class="container">
+        <span class="text-muted">© Foodify</span>
+      </div>
+    </footer>
+  </body>
+</html>
